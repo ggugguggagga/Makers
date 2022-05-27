@@ -1,10 +1,9 @@
-//import { render } from '@testing-library/react';
 import React, { Component } from 'react';
+import Home from './pages/Home';
 
-let list = document.getElementById('list');
-let text = document.getElementById('input');
+const todoApp = () => <Home />;
 
-class App extends Component {
+class countApp extends Component {
   state = {
     count: 0
   }
@@ -21,23 +20,15 @@ class App extends Component {
     });
   }
 
-  addTodo = () => {
-      let temp = document.createElement('li');
-      temp.innerHTML = text.value;
-      list.appendChild(temp);
-      text.value = "";
-  }
 
   render(){
     return (
-      <div className='App'>
+      <div className='countApp'>
         <button onClick={this.countDown}>-</button>
         {this.state.count}
         <button onClick={this.countUp}>+</button>
 
         <h1>TODO</h1>
-        <input type = 'todo' name = 'todoText' value={text} placeholder='텍스트 입력'></input>
-        <button type = "submit" name = 'add' onClick={this.addTodo}></button>
 
 
 
@@ -47,4 +38,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default todoApp;
