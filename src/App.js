@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Home from './pages/Home';
+import "./App.css";
 
 const todoApp = () => <Home />;
 
@@ -27,15 +28,12 @@ class countApp extends Component {
         <button onClick={this.countDown}>-</button>
         {this.state.count}
         <button onClick={this.countUp}>+</button>
-
-        <h1>TODO</h1>
-
-
-
       </div>
 
     );
   }
 }
 
+//export {todoApp, countApp};
 export default todoApp;
+//export default countApp;

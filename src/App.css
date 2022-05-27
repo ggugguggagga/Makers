@@ -36,3 +36,94 @@
     transform: rotate(360deg);
   }
 }
+
+.todoContainer {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.todoInputBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.inputbox {
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #f1f3f5;
+  padding: 10px;
+  height: 50px;
+  box-sizing: border-box;
+}
+.inputbox:focus {
+  outline: none;
+}
+.inputAddBtn {
+  border: none;
+  border-radius: 0;
+  background-color: #d0ebff;
+  color: #1c7ed6;
+  height: 50px;
+  width: 50px;
+  font-weight: bold;
+}
+
+.inputAddBtn:active{
+  border: none;
+  border-radius: 0;
+  background-color: #4896d2;
+  color: #145c9b;
+  height: 50px;
+  width: 50px;
+  font-weight: bold;
+}
+
+.todoList {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.listTitle {
+  font-weight: bold;
+  margin: 0;
+}
+.listUl {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 36px;
+}
+.todo:last-child {
+  margin-bottom: 0;
+}
+.todoCheckBox {
+  margin-right: 10px;
+}
+.todoCtx {
+  flex: 1;
+}
+.todoEditBtn,
+.todoDeleBtn {
+  border: none;
+  border-radius: 0;
+  height: 36px;
+  width: 36px;
+  background-color: inherit;
+}
+.todoEditBtn:hover,
+.todoDeleBtn:hover {
+  cursor: pointer;
+  background-color: #d0ebff;
+}

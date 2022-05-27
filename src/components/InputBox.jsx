@@ -9,10 +9,7 @@ const InputBox = () => (
             className="inputbox"
         />
 
-        <button 
-            type= "submit"
-            className="inputAddBtn"
-        />
+        <button type= "submit" className="inputAddBtn">Add</button>
     </div>
 );
 

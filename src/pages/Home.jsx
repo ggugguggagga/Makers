@@ -4,6 +4,7 @@ import ToDoList from '../components/ToDoList';
 
 const Home = () => (
     <div className="todoContainer">
+
         <InputBox />
 
         <ToDoList />

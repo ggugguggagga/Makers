@@ -7,7 +7,10 @@ const ToDo = () => (
 
         <span className="todoCtx">ToDo</span>
 
-        <button
-
+        <button type="button" className="todoEditBtn">✏️</button>
+        <button type="button" className="todoDeleBtn">🗑</button>
+        
     </li>
 );
+
+export default ToDo;
